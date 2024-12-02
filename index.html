@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блогер VeTaL | Гра та життя</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<header>
+    <h1>Блогер VeTaL</h1>
+    <p>Слідкуйте за життям та проектами блогера VeTaL!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="javascript:void(0)" onclick="showSection('about')">Про блогера</a></li>
+        <li><a href="javascript:void(0)" onclick="showSection('videos')">Відео</a></li>
+        <li><a href="javascript:void(0)" onclick="showSection('game')">Гра</a></li>
+        <li><a href="javascript:void(0)" onclick="showSection('donate')">Донат</a></li>
+        <li><a href="javascript:void(0)" onclick="showSection('contact')">Контакти</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="about" class="info-section">
+        <h2>Про блогера</h2>
+        <p>VeTaL — блогер, який створює цікаві відео та ділиться своїм життям з аудиторією. Слідкуйте за його пригодами та новими проектами! А ще це перший блогер на якому аудіторія може заробити швидко та просто, ігрову валюту</p>
+    </section>
+
+    <section id="videos" class="info-section">
+        <h2>Відео</h2>
+        <p>Тут ви можете переглянути відео з моментами гри та перейти до тік току VeTaL.</p>
+        <li>тік-ток аканут <a href="https://www.tiktok.com/@vetal_gtaukraine?_t=8rtIygpvT9z&_r=1" target="_blank">@ТИК-ТОК</a>.</li>
+        <li>Популярне відео <a href="https://vt.tiktok.com/ZSjthp9Hk/" target="_blank">@ВІДЕО</a>.</li>
+    </section>
+
+    <section id="game" class="info-section">
+        <h2>Гра "Мінувальник"</h2>
+        <p>Натисніть на кнопку нижче, щоб почати гру:</p>
+        <button id="start-button">Почати гру</button>
+        <button id="end-button" style="display: none;">Закінчити гру</button>
+        <div id="cards-container"></div>
+        <h3>Ваші очки: <span id="score">0</span> грн</h3>
+        <p id="game-status"></p>
+        <button id="rules-button">Правила гри</button>
+        <button id="withdraw-button">Вивести гроші</button>
+        <p id="timer"></p>
+    </section>
+
+    <section id="donate" class="info-section">
+        <h2>Донат</h2>
+        <p>Підтримайте блогера VeTaL донатами для розвитку проектів та створення нових ігор.</p>
+        <p>МоноБанк: 4441111041510300</p>
+        <p>ПриватБанк: 5168752025246888</p>
+        <p>дуже дякую!!! кожен донат покажемо в своєму ТГК.</p>
+    </section>
+
+    <section id="contact" class="info-section">
+        <h2>Контакти</h2>
+        <p>Напишіть VeTaL за наступними контактами:</p>
+        <li>Напишіть у Telegram на <a href="https://t.me/VeTaL_TT24" target="_blank">@блогер</a>.</li>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 VeTaL. Права захищені.</p>
+</footer>
+
+<div id="withdraw-modal" class="modal">
+    <div class="modal-content">
+        <h2>Як вивести гроші на свій аккаунт</h2>
+        <p>Щоб вивести гроші, виконайте наступні кроки:</p>
+        <ol>
+            <li>Зробіть скріншот вашого балансу з часом і датою.</li>
+            <li>Напишіть у Telegram на <a href="https://t.me/Ukraine_Team22" target="_blank">@менеджер</a>.</li>
+            <li>Вказати ваш нікнейм, сервер (тільки 06) та ігрову карту.</li>
+        </ol>
+        <p>Наші фахівці оброблять запит і нададуть подальші інструкції.</p>
+        <button onclick="closeModal('withdraw-modal')">Закрити</button>
+    </div>
+</div>
+
+<div id="rules-modal" class="modal">
+    <div class="modal-content">
+        <h2>Правила гри</h2>
+        <p>Метою гри є натискати на картки, які дають додаткові гроші. Однак, деякі картки містять бомбу, яка призведе до програшу.</p>
+        <p>Ви отримуєте 10.000 грн за кожну правильну картку, але якщо натиснете на бомбу, гра завершиться.</p>
+        <button onclick="closeModal('rules-modal')">Закрити</button>
+    </div>
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>

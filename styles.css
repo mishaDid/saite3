@@ -1,0 +1,68 @@
+/* Обновленные стили для футера */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Стили для секції "Гра", чтобы она была компактной */
+#game {
+    display: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#game h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#game button {
+    margin: 5px 0;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#cards-container .card {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#cards-container .card.green {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#cards-container .card.red {
+    background-color: #f44336;
+    color: white;
+}
+
+.modal-content {
+    color: rgb(255, 255, 255); /* Для чорного тексту в модальних вікнах */
+}
+
+#timer {
+    color: red;
+    font-size: 18px;
+}
